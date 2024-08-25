@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form" action="login.php" method="POST">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" id="log">Login</button><br>
+            <button type="button" id="resbtn">Register</button>
+        </form>
+    </div>
+
+    <script>
+        // Redirect to register.html on click of the Register button
+        document.getElementById('resbtn').addEventListener('click', function(){
+            window.location.href = "register.html";
+        });
+
+        // Check for the logout parameter in the URL and display a popup message
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('logout')) {
+            alert('You have been successfully logged out.');
+        }
+    </script>
+</body>
+</html>

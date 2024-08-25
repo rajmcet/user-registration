@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 370px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-height: fit-content;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid #ccc; /* bottom border only */
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box; /* ensures padding is included in width */
+    font-size: 16px;
+  }
+
+
+.form-group.error{
+    color: rgb(242,18,18);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-group.error input{
+    border-color: rgb(242,18,18);
+}
+.form-group.success input{
+    border-color: #0cc477;
+}
+
+
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
